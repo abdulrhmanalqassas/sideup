@@ -4,21 +4,21 @@ import NotificationIcon from "../assets/images/NotificationIcon.png"
 const NavBar = styled.nav`
   display: flex;
   justify-content: flex-end;
-  margin: 40px 0 20px 0;
+  margin: 2.5rem 0 1.25rem 0;
 `;
 const Notification = styled.img`
 
 `
 
 const NavButt = styled.div`
-  width: 206px;
-  height: 47px;
-  margin: 0 20px 0 0;
+  width: 12.875rem;
+  height: 2.9375rem;
+  margin: 0 1.25rem 0 0;
   background: ${(props) => (props.dark ? "#cb3e90" : "#F7F7F7")};
   color : ${(props) => (props.dark ? "#cb3e90" : "#F7F7F7")};
-  border: 2px solid #cb3e90;
-  box-shadow: 4px 6px 10px rgba(203, 62, 144, 0.05);
-  border-radius: 8px;
+  border: 0.125rem solid #cb3e90;
+  box-shadow: 0.25rem 0.375rem 0.625rem rgba(203, 62, 144, 0.05);
+  border-radius: 0.5rem;
 `;
 export const Nav = () => {
   return (

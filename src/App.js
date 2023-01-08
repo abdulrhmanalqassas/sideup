@@ -23,9 +23,10 @@ overflow-x: hidden;
 padding-top: 20px;
 `;
 const Main = styled.div`
-margin-left: 229px; 
+margin-left: 260px; 
 font-size: 28px; 
-padding: 0px 10px;`
+padding: 0px 10px;
+`
 function App() {
   return (
    <>

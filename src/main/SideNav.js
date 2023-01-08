@@ -8,10 +8,10 @@ const Side = styled.section`
   flex-direction: column;
 `;
 const Logo = styled.img`
-  width: 116px;
-  height: 42px;
-  margin-top :42px ;
-  margin-bottom :24px ;
+  width: 7.25rem;
+  height: 2.625rem;
+  margin-top :2.625rem ;
+  margin-bottom :1.5rem ;
   align-self:center;
   
 `;

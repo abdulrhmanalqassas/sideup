@@ -9,7 +9,7 @@ const Main = styled.div`
 
 export const MainCard = ()=>{
 return(
-    <Main> <Card width={"500px"}
-    height={"280px"} header={"105"} ><MainC/></Card>  </Main>
+    <Main> <Card width={"31.25rem"}
+    height={"17.5rem"} header={"105"} ><MainC/></Card>  </Main>
 )
 }
