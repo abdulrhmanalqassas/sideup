@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import { SideNave } from './main/SideNav';
+import { Nav } from './main/Nav';
+import { Dash } from './Dash/Dash';
 
+const items = [{name:"alqassas"},{name:"hameed"},{name:"alqassas"},{name:"hameed"},{name:"alqassas"},{name:"hameed"}]
+
+// const Layout = styled.div`
+// display: flex;
+// height:100%;
+
+// `
+const Pane = styled.div`
+background: #FFF;
+height: 100%;
+width: 229px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+overflow-x: hidden;
+padding-top: 20px;
+`;
+const Main = styled.div`
+margin-left: 229px; 
+font-size: 28px; 
+padding: 0px 10px;`
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+
+       <Pane >
+       <SideNave items={items}></SideNave>
+       </Pane>
+       <Main>
+       <Nav></Nav>
+     <Dash></Dash>
+       </Main>
+     
+     </>
   );
 }
 
