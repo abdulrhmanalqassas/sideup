@@ -11,8 +11,8 @@ const Notification = styled.img`
 `
 
 const NavButt = styled.div`
-  width: 12.875rem;
-  height: 2.9375rem;
+  width: 7.75rem;
+  height:2.5rem;
   margin: 0 1.25rem 0 0;
   background: ${(props) => (props.dark ? "#cb3e90" : "#F7F7F7")};
   color : ${(props) => (props.dark ? "#cb3e90" : "#F7F7F7")};
