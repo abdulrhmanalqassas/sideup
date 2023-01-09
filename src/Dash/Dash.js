@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { MainCard } from "./mainCard/MainCard";
 import { Card } from "../Card";
-import { SideCards } from "./mainCard/SideCards";
-import {BottomCards} from "./mainCard/bottomCards"
+import { SideCards } from "./SideCards";
+import {BottomCards} from "./bottomCards"
 const Parent = styled.div`
   // padding: 2.5rem;
   display: grid;

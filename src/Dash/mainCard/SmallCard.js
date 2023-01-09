@@ -6,7 +6,8 @@ import unactiveRate from "../../assets/images/unactiveRate.png"
 const BorderCard = styled.div`
   width: 193px;
   padding: 5px;
-  height: 94px;
+  height: 92px;
+  margin:10px 0  ;
   left: 0px;
   top: 0px;
   background: rgba(66, 120, 184, 0.05);

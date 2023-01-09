@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { SideNave } from './main/SideNav';
 import { Nav } from './main/Nav';
 import { Dash } from './Dash/Dash';
+import { Character} from "./main/Character"
 
 const items = [{name:"alqassas"},{name:"hameed"},{name:"alqassas"},{name:"hameed"},{name:"alqassas"},{name:"hameed"}]
 
@@ -36,6 +37,7 @@ function App() {
        </Pane>
        <Main>
        <Nav></Nav>
+       < Character/>
      <Dash></Dash>
        </Main>
      
