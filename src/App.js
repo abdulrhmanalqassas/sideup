@@ -14,7 +14,7 @@ const items = [{name:"alqassas"},{name:"hameed"},{name:"alqassas"},{name:"hameed
 const Pane = styled.div`
 background: #FFF;
 height: 100%;
-width: 229px;
+width: 185px;
 position: fixed;
 z-index: 1;
 top: 0;
@@ -23,7 +23,7 @@ overflow-x: hidden;
 padding-top: 20px;
 `;
 const Main = styled.div`
-margin-left: 260px; 
+margin-left:185px; 
 font-size: 28px; 
 padding: 0px 10px;
 `
