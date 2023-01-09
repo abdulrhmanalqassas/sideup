@@ -39,7 +39,7 @@ import Chart from "react-apexcharts";
            options={state.options}
            series={state.series}
            type="line"
-           width="352"
+           width="45%"
   />
     )
   }
