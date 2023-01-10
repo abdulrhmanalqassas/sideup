@@ -11,6 +11,15 @@ const CardInit = styled.div`
   box-shadow: 0.25rem 0.375rem 0.625rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   width: 100%;
+  @media (max-width: 900px) {
+    width:fit-content;
+    height:fit-content;
+    @media (max-width: 900px) {
+      // display: flex;
+      max-width:100%;
+    
+    }
+  }
 `;
 const Head = styled.div`
   font-family: "Helvetica";

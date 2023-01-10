@@ -2,12 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import NotificationIcon from "../assets/images/NotificationIcon.png"
 const NavBar = styled.nav`
-  display: flex;
-  justify-content: flex-end;
-  margin: 2.5rem 0 1.25rem 0;
+margin: 2.5rem 0 1.25rem 0;
 `;
 const Notification = styled.img`
 
+`
+const Desktop = styled.div`
+display: flex;
+justify-content: flex-end;
+// margin: 2.5rem 0 1.25rem 0;
+@media (max-width: 900px) {
+  display: none;
+}
 `
 
 const NavButt = styled.div`
@@ -23,11 +29,14 @@ const NavButt = styled.div`
 export const Nav = () => {
   return (
     <NavBar>
+      <Desktop>
       <NavButt> color </NavButt>
       <NavButt> tray </NavButt>
       <NavButt dark={true}> any </NavButt>
       <Notification src={NotificationIcon} />
         <Notification src={NotificationIcon} />
+      </Desktop>
+      
     </NavBar>
   );
 };

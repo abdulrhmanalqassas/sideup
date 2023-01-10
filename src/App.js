@@ -22,9 +22,15 @@ top: 0;
 left: 0;
 overflow-x: hidden;
 padding-top: 20px;
+@media (max-width: 900px) {
+  display:none;
+}
 `;
 const Main = styled.div`
 margin-left:185px; 
+@media (max-width: 900px) {
+  margin-left:5px; 
+}
 font-size: 28px; 
 padding: 0px 10px;
 `

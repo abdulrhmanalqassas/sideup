@@ -3,6 +3,9 @@ import styled from "styled-components";
 import headImg from "../../assets/images/headImg.png";
 import activeRate from "../../assets/images/activeRate.png"
 import unactiveRate from "../../assets/images/unactiveRate.png"
+import {Rate, ChartImg} from "../helper/Rate"
+import { Amount } from "../helper/Amount";
+
 const BorderCard = styled.div`
   width: 193px;
   padding: 5px;
@@ -14,6 +17,12 @@ const BorderCard = styled.div`
   border-left: 2px solid #4278b8;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+  @media (max-width: 900px) {
+    display:inline-block;
+    margin:30px 0 0 0  ;
+    width: 120px;
+  }
+  
 `;
 
 const Head = styled.div`
@@ -34,26 +43,6 @@ const Img = styled.img`
   height: 20.3px;
 `;
 
-const Amount = styled.h5`
-margin:0;
-padding:0;
-font-weight: 400;
-font-size: 19px;
-line-height: 21px;
-color: #333737;
-`
-const Rate =styled.h1`
-margin:0;
-padding:0;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 22px;
-line-height: 32px;
-color:${ props=>(props.active? " #17A21A":"#CE0C14")};
-`
-const ChartImg = styled.img`
-`
 
 export const SmallCard = ({ header , amount="000" ,  currency = "LE",rate="00" , active=false}) => {
   return (
