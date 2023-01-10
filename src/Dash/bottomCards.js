@@ -23,7 +23,8 @@ export const BottomCards = () => {
         </Card>
       </Card1>
       <Card2>
-        <Card header={"2"}></Card>
+        <Card header={"2"}> <Donut type="pie" /></Card>
+       
       </Card2>
       <Card3>
         <Card header={"3"}></Card>

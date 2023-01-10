@@ -8,7 +8,7 @@ margin-left:-20px;
 margin-bottom:-20px;
 `
 
-export const Donut = () => {
+export const Donut = ({type="donut"}) => {
   const [state, setState] = useState({
     series: [70,30],
     options: {
@@ -49,7 +49,7 @@ export const Donut = () => {
       <Chart
       options={state.options}
       series={state.series}
-      type="donut"
+      type={type}
       width={110}
     />
     </WidthControl>
