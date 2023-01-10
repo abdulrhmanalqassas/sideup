@@ -6,6 +6,9 @@ import SideupLogo from "../assets/images/SideupLogo.png";
 const Side = styled.section`
   display: flex;
   flex-direction: column;
+  @media (max-width: 900px) {
+    display:none;
+  }
 `;
 const Logo = styled.img`
   width: 7.25rem;

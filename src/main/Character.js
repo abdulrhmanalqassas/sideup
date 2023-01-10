@@ -6,10 +6,11 @@ import c4 from "../assets/images/characters/c4.png"
 import styled from "styled-components";
 
 const FullStrap = styled.div`
-width : 100% ;
+max-width : 90% ;
 display :flex; 
 justify-content:space-around;
 margin-bottom:10px ;
+overflow: hidden;
 `
 const images = [c1,c2,c3,c4,c1,c2,c3,c4,c1] ;
 
