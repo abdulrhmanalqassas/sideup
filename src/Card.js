@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import headImg from "./assets/images/headImg.png";
+import { useTranslation } from "react-i18next";
 
 const CardInit = styled.div`
   width: ${(props) => props.width};
@@ -40,11 +41,12 @@ height: 20.3px;
 `;
 
 export const Card = ({ header, children, height = "100%", width , isHeader = true}) => {
+  const { t } = useTranslation();
   return (
     <CardInit height={height} width={width}>
      {isHeader && <Head>
         <HeadImg src={headImg} />
-        {header}
+        {t(header)}
       </Head>}
       {children}
     </CardInit>

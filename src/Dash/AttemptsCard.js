@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { Card } from "../Card";
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 
 const attempts = [
-  { state: "red", name: "success attempts ", value: "10" },
-  { state: "green", name: "not good attempts ", value: "20" },
+  { state: "red", name: "success", value: "10" },
+  { state: "green", name: "not", value: "20" },
   { state: "gray", name: "some kind of attempts", value: "30" },
-  { state: "red", name: "success attempts ", value: "10" },
-  { state: "green", name: "not good attempts ", value: "20" },
+  { state: "red", name: "success", value: "10" },
+  { state: "green", name: "not", value: "20" },
   { state: "gray", name: "some kind of attempts", value: "30" },
 ];
 
@@ -47,8 +49,9 @@ display:block;
 `
 // {<Value>{value}</Value>}
 const AttemptElement = ({ state, name, value }) => {
+  const { t } = useTranslation();
   return <>
-  < Attempt> <Thum/> {name}  </ Attempt>
+  < Attempt> <Thum/> {t(name) }  </ Attempt>
   <Border/>
   </>;
 };

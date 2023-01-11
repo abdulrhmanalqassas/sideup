@@ -8,7 +8,8 @@ import {AttemptsCard} from "./AttemptsCard"
 
 
 const Parent = styled.div`
-  padding: 2.5rem;
+  padding: 1.7rem;
+
   display: grid;
   height: 400px;
   grid-template-areas:
@@ -17,9 +18,10 @@ const Parent = styled.div`
     "card1 card2   card3   side-card3  left  left";
   gap: 0.625rem;
   @media (max-width: 900px) {
+    margin:0 auto;
     padding: 0em;
     display: flex;
-    max-width: 70%;
+    max-width:85%;
     // flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
@@ -42,7 +44,7 @@ export const Dash = () => {
       <SideCards />
       <MainCard />
       <Frame>
-        <Card header={"left b"}></Card>
+        <Card isHeader={false}></Card>
       </Frame>
       
     </Parent>

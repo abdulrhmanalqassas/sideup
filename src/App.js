@@ -1,12 +1,15 @@
 import './App.css';
+import React,{useState} from 'react';
 import styled from 'styled-components';
 import { SideNave } from './main/SideNav';
 import { Nav } from './main/Nav';
 import { Dash } from './Dash/Dash';
 import { Character} from "./main/Character";
 import { MobNav } from './main/MobNav';
-
-const items = [{name:"My Customers"},{name:"Dashboard"},{name:"alqassas"},{name:"Dashboard"},{name:"My Customers"},{name:"My Customers"}]
+import LocaleContext from './LocaleContext';
+import i18n from './i18n';
+import { useTranslation } from "react-i18next";
+const items = [{name:'order'},{name:"dashboard"},{name:"net"},{name:"dashboard"},{name:"My Customers"},{name:"My Customers"}]
 
 // const Layout = styled.div`
 // display: flex;
@@ -36,8 +39,10 @@ font-size: 28px;
 padding: 0px 10px;
 `
 function App() {
+  const [locale, setLocale] = useState(i18n.language);
+  i18n.on('languageChanged', (lng) => setLocale(i18n.language));
   return (
-   <>
+    <LocaleContext.Provider value={{locale, setLocale}}>
 <MobNav></MobNav>
        <Pane >
        <SideNave items={items}></SideNave>
@@ -48,7 +53,7 @@ function App() {
      <Dash></Dash>
        </Main>
      
-     </>
+       </LocaleContext.Provider>
   );
 }
 

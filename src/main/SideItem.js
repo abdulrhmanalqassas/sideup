@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import sideIcon from '../assets/images/sideIcon.png'
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
+
 const Item = styled.div`
 border-left: ${props=>(props.active &&  "0.625rem solid red")} ;
 width: 14.3125rem;
@@ -22,9 +25,10 @@ height: 1.1875rem;
 `
 
 export const SideItem = ({ name  ,active=false }) => {
-    return (
+  const { t } = useTranslation();   
+  return (
       <Item active={active}>
-        <Icon src={sideIcon} />{name}
+        <Icon src={sideIcon} /> {t(name)}
         </Item>
         
     );
