@@ -2,11 +2,12 @@ import React,{useState} from "react";
 import Chart from "react-apexcharts";
 
 
- export  const MainC = ()=>{
+ export  const MainC = ({type="line"})=>{
   const [state, setState ] =useState({
     options: {
-      
-      stroke: {
+      legend: {
+        show: false,},
+      stroke: { 
         curve: 'smooth',
       },
       chart: {
@@ -40,7 +41,7 @@ import Chart from "react-apexcharts";
         <Chart
            options={state.options}
            series={state.series}
-           type="line"
+           type={type}
            width="280px"
   />
     )

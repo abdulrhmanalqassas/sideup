@@ -39,13 +39,13 @@ width:22px;
 height: 20.3px;
 `;
 
-export const Card = ({ header, children, height = "100%", width }) => {
+export const Card = ({ header, children, height = "100%", width , isHeader = true}) => {
   return (
     <CardInit height={height} width={width}>
-      <Head>
+     {isHeader && <Head>
         <HeadImg src={headImg} />
         {header}
-      </Head>
+      </Head>}
       {children}
     </CardInit>
   );

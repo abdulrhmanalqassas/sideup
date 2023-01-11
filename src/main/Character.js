@@ -9,12 +9,11 @@ const FullStrap = styled.div`
 max-width : 100% ;
 display :flex; 
 justify-content:space-around;
-margin-bottom:10px ;
+    
 overflow: hidden;
 @media (max-width: 900px) {
     display: none;
-    // width:100%;
-    // flex-direction: column;
+    
   }
 `
 const images = [c1,c2,c3,c4,c1,c2,c3,c4,c1] ;

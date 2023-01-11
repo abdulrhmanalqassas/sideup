@@ -7,9 +7,9 @@ import {Rate, ChartImg} from "../helper/Rate"
 import { Amount } from "../helper/Amount";
 
 const BorderCard = styled.div`
-  width: 193px;
+  width: 153px;
   padding: 5px;
-  height: 92px;
+  height: 82px;
   margin:10px 0  ;
   left: 0px;
   top: 0px;

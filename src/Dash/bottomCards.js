@@ -24,12 +24,16 @@ export const BottomCards = () => {
     <>
       <Card1>
         <Card  header={"1"}>
+        <Amount>{`${5000} ${"USD"}` } </Amount>
         <Donut/>
 
         </Card>
       </Card1>
       <Card2>
-        <Card header={"2"}> <Donut type="pie" />
+      
+        <Card header={"2"}> 
+        <Amount>{`${5000} ${"USD"}` } </Amount>
+        <Donut type="pie" />
        
         </Card>
        

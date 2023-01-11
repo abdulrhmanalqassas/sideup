@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { SideNave } from './main/SideNav';
 import { Nav } from './main/Nav';
 import { Dash } from './Dash/Dash';
-import { Character} from "./main/Character"
+import { Character} from "./main/Character";
+import { MobNav } from './main/MobNav';
 
-const items = [{name:"alqassas"},{name:"hameed"},{name:"alqassas"},{name:"hameed"},{name:"alqassas"},{name:"hameed"}]
+const items = [{name:"My Customers"},{name:"Dashboard"},{name:"alqassas"},{name:"Dashboard"},{name:"My Customers"},{name:"My Customers"}]
 
 // const Layout = styled.div`
 // display: flex;
@@ -37,7 +38,7 @@ padding: 0px 10px;
 function App() {
   return (
    <>
-
+<MobNav></MobNav>
        <Pane >
        <SideNave items={items}></SideNave>
        </Pane>

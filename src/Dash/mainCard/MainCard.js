@@ -22,11 +22,24 @@ const MainCardLayout = styled.div`
 }
  
 `
+const SmallCardContainer = styled.div`
+
+@media (max-width: 900px) {
+  display: flex;
+  justify-content:space-around;
+}`
 const MainCart = styled.div`
 width:min-content;
 @media (max-width: 900px) {
   display: none;
  
+  overflow: hidden;
+}`
+
+const PhoneCart  = styled.div`
+width:min-content;
+@media (min-width: 900px) {
+  display: none;
   overflow: hidden;
 }`
 export const MainCard = () => {
@@ -35,13 +48,16 @@ export const MainCard = () => {
      
       <Card header={"105"}>
       <MainCardLayout>
-        <div>
+        <SmallCardContainer>
         <SmallCard/>
         <SmallCard/>
-        </div>        
+        </SmallCardContainer>        
         <MainCart>
         <MainC/>
         </MainCart>
+        <PhoneCart>
+        <MainC type="bar" />
+        </PhoneCart>
        
         </MainCardLayout>
       </Card>

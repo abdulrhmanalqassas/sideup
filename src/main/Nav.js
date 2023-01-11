@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NotificationIcon from "../assets/images/NotificationIcon.png"
+import { MobNav } from "./MobNav";
 const NavBar = styled.nav`
 margin: 2.5rem 0 1.25rem 0;
 `;
