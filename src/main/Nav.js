@@ -49,6 +49,7 @@ const LanguageIcon = styled.img`
 border-left: 1px solid #DC4097;
 padding: 0  10px;
   cursor: pointer;
+  filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.02));
 `;
 const LanguageText = styled.span`
 width: 23px;
