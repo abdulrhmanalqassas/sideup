@@ -18,10 +18,12 @@ display:flex;
 
 `
 const Icon = styled.img`
-padding-left : 2.375rem;
-padding-right : 0.3125rem;
-width: 1.25rem;
-height: 1.1875rem;
+width: 20px;
+height: 19px;
+margin-left : 2.375rem;
+margin-right : 0.3125rem;
+// width: 1.25rem;
+// height: 1.1875rem;
 `
 
 export const SideItem = ({ name  ,active=false }) => {
