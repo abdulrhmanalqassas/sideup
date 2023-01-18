@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import Chart from "react-apexcharts";
 import styled from "styled-components";
 const WidthControl = styled.div`
-width:0;
-margin:0;
-margin-left:-20px;
-margin-bottom:-20px;
-`
+  width: 0;
+  margin: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+`;
 
-export const Donut = ({type="donut"}) => {
-  const [state, setState] = useState({
-    series: [70,30],
+export const Donut = ({ type = "donut" }) => {
+  const [state] = useState({
+    series: [70, 30],
     options: {
       chart: {
         width: 20,
@@ -29,30 +29,19 @@ export const Donut = ({type="donut"}) => {
         type: "gradient",
       },
       legend: {
-        show: false,},
-      // responsive: [
-      //   {
-      //     breakpoint: 480,
-      //     options: {
-      //       chart: {
-      //         width: "0",
-      //       },
-            
-      //     },
-      //   },
-      // ],
+        show: false,
+      },
     },
   });
 
   return (
     <WidthControl>
       <Chart
-      options={state.options}
-      series={state.series}
-      type={type}
-      width={110}
-    />
+        options={state.options}
+        series={state.series}
+        type={type}
+        width={110}
+      />
     </WidthControl>
-    
   );
 };

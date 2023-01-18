@@ -7,16 +7,15 @@ const Side = styled.section`
   display: flex;
   flex-direction: column;
   @media (max-width: 900px) {
-    display:none;
+    display: none;
   }
 `;
 const Logo = styled.img`
   width: 7.25rem;
   height: 2.625rem;
-  margin-top :2.625rem ;
-  margin-bottom :1.5rem ;
-  align-self:center;
-  
+  margin-top: 2.625rem;
+  margin-bottom: 1.5rem;
+  align-self: center;
 `;
 
 export const SideNave = ({ items }) => {

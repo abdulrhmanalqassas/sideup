@@ -18,49 +18,51 @@ const items = [
   { name: "My Customers" },
 ];
 
-
 const Pane = styled.div`
   background: #fff;
   height: 100%;
-  width: 185px;
+  width: 11.5625rem;
   position: fixed;
   z-index: 1;
   top: 0;
-  ${(props )=>props.side ? "left : 185px" :"right:  185px "}
+  ${(props) => (props.side ? "left : 11.5625rem" : "right:  11.5625rem ")}
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   @media (max-width: 900px) {
     display: none;
   }
 `;
 const Main = styled.div`
-  margin:${(props )=>props.side ? "0 0 0 185px" :"0 185px 0 0"};
+  margin: ${(props) => (props.side ? "0 0 0 11.5625rem" : "0 11.5625rem 0 0")};
   @media (max-width: 900px) {
-    margin-left: 5px;
+    // margin-left: 0.3125rem;
+    margin: 0;
+    padding: 0rem 0rem;
   }
-  font-size: 28px;
-  padding: 0px 10px;
+  font-size: 1.75rem;
+  padding: 0rem 0.625rem;
 `;
 function App() {
   const [locale, setLocale] = useState(i18n.language);
   i18n.on("languageChanged", (lng) => setLocale(i18n.language));
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
-      <Helmet htmlAttributes={{
+      <Helmet
+        htmlAttributes={{
           lang: locale,
-          dir: locale === 'en' ? 'ltr' : 'rtl'
-        }} />
-        {console.log(">>>>llllll>>>>>>>",locale=== 'en')}
+          dir: locale === "en" ? "ltr" : "rtl",
+        }}
+      />
+      {console.log(">>>>llllll>>>>>>>", locale === "en")}
       <MobNav></MobNav>
-      <Pane side={locale=== 'en'} >
+      <Pane side={locale === "en"}>
         <SideNave items={items}></SideNave>
       </Pane>
-      <Main  side={locale=== 'en'} >
+      <Main side={locale === "en"}>
         <Nav></Nav>
         <Character />
         <Dash></Dash>
       </Main>
-
     </LocaleContext.Provider>
   );
 }

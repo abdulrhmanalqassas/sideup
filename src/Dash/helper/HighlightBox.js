@@ -1,4 +1,4 @@
-import React from "react";
+
 import styled from "styled-components";
 
 export const Highlight = styled.div`
@@ -14,4 +14,3 @@ export const Highlight = styled.div`
   width: fit-content;
   padding: 0.625rem;
 `;
-
