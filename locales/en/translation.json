@@ -9,5 +9,8 @@
   "success": "success attempts",
   "not": "not good attempts",
   "some kind of attempts": "some kind of attempts",
-  "105":"Main Card"
+  "105":"Main Card",
+  "h1" : "النمو",
+  "h2":"الهديه",
+  "h3":"معدل النجاح"
 }
