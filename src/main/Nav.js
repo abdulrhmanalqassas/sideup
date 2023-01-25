@@ -23,6 +23,7 @@ const Desktop = styled.div`
 `;
 const NavButt = styled.div`
   height: fit-content;
+  cursor: pointer;
   // display: flex;
   padding: 0.0625rem;
   align-items: center;
