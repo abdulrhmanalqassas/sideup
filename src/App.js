@@ -53,7 +53,7 @@ function App() {
           dir: locale === "en" ? "ltr" : "rtl",
         }}
       />
-      {console.log(">>>>llllll>>>>>>>", locale === "en")}
+  
       <MobNav></MobNav>
       <Pane side={locale === "en"}>
         <SideNave items={items}></SideNave>
